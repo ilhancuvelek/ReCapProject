@@ -8,8 +8,8 @@ namespace ConsoleUIII
     {
         static void Main(string[] args)
         {
-            //RentalTest();
-            CarTest();
+            RentalTest();
+            //CarTest();
             //ColorTest();
             //BrandTest();
         }
@@ -78,7 +78,7 @@ namespace ConsoleUIII
             {
                 foreach (var item in result.Data)
                 {
-                    Console.WriteLine(item.CustomerName + " " + item.CarName + " ");
+                    Console.WriteLine(item.CarId + " " + item.CarName + " ");
                 }
             }
             else
