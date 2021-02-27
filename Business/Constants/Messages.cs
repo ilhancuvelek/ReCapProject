@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,5 +15,6 @@ namespace Business.Constants
         public static string CarInvalidDeleted = "araba silinmedi";
         public static string MaintenanceTime = "sistem bakımda";
         public static string CarsListed = "arabalar listelendi";
+        internal static CarImage CreatedFileMessages;
     }
 }
