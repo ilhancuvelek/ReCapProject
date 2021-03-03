@@ -18,6 +18,8 @@ namespace Core.Utilities.Results
 
         }
 
-        
+        public ErrorDataResult(string v)
+        {
+        }
     }
 }
