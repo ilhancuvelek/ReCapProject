@@ -10,5 +10,6 @@ namespace Business.Abstract
     {
         IResult Add(Brand brand);
         IDataResult<List<Brand>> GetAll();
+
     }
 }

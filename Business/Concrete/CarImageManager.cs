@@ -87,7 +87,7 @@ namespace Business.Concrete
             catch (Exception )
             {
 
-                return new ErrorDataResult<CarImage>(Messages.CreatedFileMessages);
+                //return new ErrorDataResult<CarImage>();
             }
 
             return new SuccessDataResult<CarImage>(new CarImage { Id = carImage.Id, CarId = carImage.CarId, ImagePath = result, Date = DateTime.Now }, "resim eklendi");

@@ -18,8 +18,8 @@ namespace Core.Utilities.Results
 
         }
 
-        public ErrorDataResult(string v)
-        {
-        }
+        //public ErrorDataResult(string createdFileMessages):base(false)
+        //{
+        //}
     }
 }

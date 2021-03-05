@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -18,5 +19,7 @@ namespace Business.Constants
         public static string CarsListed = "arabalar listelendi";
         public static string CreatedFileMessages;
         public static string AuthorizationDenied="yetkiniz yok";
+        internal static User UserNotFound;
+        internal static User PasswordError;
     }
 }
