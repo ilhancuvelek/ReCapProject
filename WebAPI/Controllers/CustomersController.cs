@@ -17,7 +17,7 @@ namespace WebAPI.Controllers
         {
             _customerService = customerService;
         }
-        [HttpPost("getall")]
+        [HttpGet("getall")]
         public IActionResult GetAll()
         {
             var result = _customerService.GetAll();
