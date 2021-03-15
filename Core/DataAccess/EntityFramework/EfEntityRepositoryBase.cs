@@ -37,6 +37,7 @@ namespace Core.DataAccess.EntityFramework
             using (TContext context = new TContext())
             {
                 return context.Set<TEntity>().SingleOrDefault(filter);
+                context.Dispose();
             }
         }
 
@@ -45,6 +46,7 @@ namespace Core.DataAccess.EntityFramework
             using (TContext context = new TContext())
             {
                 return filter == null ? context.Set<TEntity>().ToList() : context.Set<TEntity>().Where(filter).ToList();
+                context.Dispose();
             }
         }
 
